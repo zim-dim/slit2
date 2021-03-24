@@ -26,7 +26,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 
 
-LINK = C:Пользователи/zimov/fdimas_bot/data/
+LINK = https://github.com/zim-dim/slit2/tree/main/data/
 
 
 def read_content_from_url(file):
