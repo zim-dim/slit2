@@ -16,8 +16,10 @@ bot.
 """
 
 import logging
+import configparser
 from telegram     import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CommandHandler,CallbackQueryHandler, MessageHandler, Filters
+import urllib.request
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
