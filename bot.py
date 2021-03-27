@@ -31,6 +31,16 @@ logger = logging.getLogger(__name__)
 LINK = 'https://zim-dim.github.io/slit2/data/'
 
 
+markup = types.ReplyKeyboardMarkup()
+itembtna = types.KeyboardButton('a')
+itembtnv = types.KeyboardButton('v')
+itembtnc = types.KeyboardButton('c')
+itembtnd = types.KeyboardButton('d')
+itembtne = types.KeyboardButton('e')
+markup.row(itembtna, itembtnv)
+markup.row(itembtnc, itembtnd, itembtne)
+tb.send_message(chat_id, "Choose one letter:", reply_markup=markup)
+
 def read_content_from_url(file):
     url_file = LINK +file
     f = urllib.request.urlopen(url_file)
